@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNet.Identity
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Welcome @User.Identity.GetUserName()</h2>
+
+<a href="@Url.Action("logout", "authentication")">
+    We Gotta Get Outta Here! (Log Out)
+</a>
+
